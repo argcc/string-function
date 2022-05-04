@@ -42,7 +42,7 @@ public class StringFunctionExample {
     }
 
     public static class XPathFunctions {
-        private static final String TEXT = "normalize-space(translate(text(),' ', ' '))";
+        private static final String TEXT = "normalize-space(translate(text(),'\u00A0', ' '))";
 
         public String sanitize(String value) {
             return value == null ? "" : value
