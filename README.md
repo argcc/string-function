@@ -1,10 +1,23 @@
 Библиотека ищет в строке вызовы определенных функций и заменяет их на результат вызова этих функций.
 
+Подключение через Maven:
+```xml
+        <dependency>
+            <groupId>io.github.argcc</groupId>
+            <artifactId>string-function</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+```
+
 Пример:
 
 ```java
+import io.github.argcc.string_function.FuncName;
+import io.github.argcc.string_function.StringFunctionHandler;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 
 public class StringFunctionExample {
 
