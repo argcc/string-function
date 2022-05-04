@@ -47,7 +47,7 @@ public class StringFunctionExample {
         public String sanitize(String value) {
             return value == null ? "" : value
                     .replace("'", "''")
-                    .replace(" ", " ")// два разных пробела: 0xC2A0 и 0x20
+                    .replace("\u00A0", " ")
                     .replaceAll("\\s{2,}", " ")
                     .trim();
         }
