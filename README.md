@@ -105,12 +105,12 @@ public class StringFunctionExample {
         // Пример упрощения xpath
         sfh.setFunctions(new XPathFunctions());
         System.out.println(sfh.handle("//*[class{header-item} and text{Some page header}]"));
-        //OUT: //*[contains(concat(' ',@class,' '), ' header-item ') and (normalize-space(translate(text(),'\u00A0', ' ')) = 'Some page header')]
+        //OUT: //*[contains(concat(' ',@class,' '), ' header-item ') and (normalize-space(translate(text(),' ', ' ')) = 'Some page header')]
 
         // Синтаксис вызова может быть разным
         sfh.setTemplate("$name(args)");
         System.out.println(sfh.handle("//*[$class(header-item) and $text(Some page header)]"));
-        //OUT: //*[contains(concat(' ',@class,' '), ' header-item ') and (normalize-space(translate(text(),'\u00A0', ' ')) = 'Some page header')]
+        //OUT: //*[contains(concat(' ',@class,' '), ' header-item ') and (normalize-space(translate(text(),' ', ' ')) = 'Some page header')]
 
     }
 }
