@@ -1,4 +1,4 @@
-package org.argcc.string_function;
+package io.github.argcc.string_function;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

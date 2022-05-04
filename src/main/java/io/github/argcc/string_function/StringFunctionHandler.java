@@ -1,4 +1,4 @@
-package org.argcc.string_function;
+package io.github.argcc.string_function;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -74,7 +74,7 @@ public class StringFunctionHandler {
     }
 
     /**
-     * Specifies the semantics of a function call. Examples: "name(args)", "$name<[args]>", "#name{args}"
+     * Specifies the semantics of a function call. Examples: "name(args)", "$name&lt;[args]&gt;", "#name{args}"
      * @param template
      * @return
      */
